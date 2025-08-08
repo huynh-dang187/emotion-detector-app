@@ -32,4 +32,4 @@ Xây dựng mô hình phân loại cảm xúc (tích cực / tiêu cực) từ �
 - Tích hợp mô hình vào ứng dụng Streamlit
 - Cho phép người dùng nhập câu và nhận kết quả cảm xúc                
  # Kế hoạch tiếp theo cho ngày (10/8/2025)
- -Học về OpenCV 
+ 
