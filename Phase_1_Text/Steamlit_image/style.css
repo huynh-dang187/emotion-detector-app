@@ -1,0 +1,79 @@
+
+
+<style>
+/* Toàn bộ nền ứng dụng */
+body {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* Tiêu đề */
+h1, h2, h3 {
+    color: #ff4e78;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Khu vực kết quả */
+.result {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Nút */
+.stButton>button {
+    background: linear-gradient(90deg, #ff6f61, #ff9671);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.stButton>button:hover {
+    background: linear-gradient(90deg, #ff856f, #ffb199);
+    transform: scale(1.05);
+}
+
+/* Bảng lịch sử */
+.css-1aumxhk, .dataframe {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+    font-size: 14px;
+}
+
+/* Cột trong bảng */
+.dataframe td, .dataframe th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Biểu đồ */
+canvas {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+    padding: 10px;
+}
+
+/* Hiệu ứng mượt */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+</style>

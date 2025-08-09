@@ -5,8 +5,13 @@ import string
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
+# Đọc file CSS với UTF-8
+with open("style.css", "r", encoding="utf-8") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+st.title("Ứng dụng Nhận diện Cảm xúc")
 # --------------------------------------------------------
-# |      😀 ỨNG DỤNG PHÂN LOẠI CẢM XÚC                   |
+# |             ỨNG DỤNG PHÂN LOẠI CẢM XÚC                |
 # --------------------------------------------------------
 # | Mục đích: Xác định cảm xúc của câu văn bạn nhập vào   |
 # --------------------------------------------------------
@@ -14,7 +19,7 @@ from nltk.tokenize import word_tokenize
 # |                                                       |
 # | [ Nút: Phân loại cảm xúc ]                            |
 # --------------------------------------------------------
-# | 📌 Kết quả:                                           |
+# | Kết quả:                                           |
 # |    - Nhãn dự đoán: Positive / Negative / Neutral      |
 # |    - Xác suất: 85%                                    |
 # --------------------------------------------------------
@@ -34,30 +39,49 @@ def preprocess(text):
     return " ".join(tokens)
 
 
-st.title("ỨNG DỤNG PHÂN LOẠI CẢM XÚC")
+
 
 st.header("Mục đích: Xác định cảm xúc của câu văn bạn nhập vào")
-user_input = st.text_input("Nhập câu của bạn: ")
 
-#Xử lí 
+# --- Khởi tạo lịch sử ---
+if "history" not in st.session_state:
+    st.session_state.history = []  # [(text, label)]
+    
+sentence = st.text_input("Nhập câu của bạn:")
+
 if st.button("Phân loại cảm xúc"):
-  if user_input.strip() != "":
-        # 4. Tiền xử lý
-        processed_text = preprocess(user_input)
+    if sentence.strip():
+        # 1. Tiền xử lý
+        processed_text = preprocess(sentence)
 
-        # 5. Vector hóa
+        # 2. Vector hóa
         vector_input = vectorizer.transform([processed_text])
 
-        # 6. Dự đoán
+        # 3. Dự đoán
         prediction = model.predict(vector_input)[0]
 
+        # 4. Hiển thị kết quả
         if prediction == "positive":
             st.success("Positive 😍")
         elif prediction == "negative":
             st.error("Negative 😡")
         else:
-            st.info("Neutral 😐") 
-else:
-        st.warning("Vui lòng nhập câu trước khi phân loại!")
-    
+            st.info("Neutral 😐")  # nếu có train trung tính
 
+        # 5. Lưu lịch sử
+        st.session_state.history.append((sentence, prediction))
+    else:
+        st.warning("Vui lòng nhập câu trước khi phân loại!")
+        
+#  Hiển thị lịch sử 
+if st.session_state.history:
+    st.subheader(" Lịch sử các câu đã nhập")
+    df_history = pd.DataFrame(st.session_state.history, columns=["Câu", "Kết quả"])
+    st.table(df_history)
+
+# Vẽ biểu đồ 
+    st.subheader(" Tỉ lệ dự đoán")
+    
+    counts = df_history["Kết quả"].value_counts()
+    st.bar_chart(counts)
+    

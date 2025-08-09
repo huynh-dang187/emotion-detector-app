@@ -30,6 +30,7 @@ Xây dựng mô hình phân loại cảm xúc (tích cực / tiêu cực) từ �
  # Kế hoạch đầu tiên (Nhận diện cảm xúc qua Text do người dùng nhập (29/7 - 8/8 ))
  # Kế hoạch tiếp theo cho ngày (9/8/2025)
 - Tích hợp mô hình vào ứng dụng Streamlit
-- Cho phép người dùng nhập câu và nhận kết quả cảm xúc                
+- Cho phép người dùng nhập câu và nhận kết quả cảm xúc    
+- Tích hợp thêm lịch sử nhập và biểu đồ tỉ lệ             
  # Kế hoạch tiếp theo cho ngày (10/8/2025)
  

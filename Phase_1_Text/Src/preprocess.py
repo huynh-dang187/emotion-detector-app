@@ -13,4 +13,3 @@ def preprocess(text):
     tokens = word_tokenize(text)
     tokens = [word for word in tokens if word not in stop_words]
     return ' '.join(tokens)
-
