@@ -13,7 +13,7 @@
 - Làm sạch và tiền xử lý văn bản (NLTK, stopwords, tokenization).  
 - Vector hóa văn bản bằng **TF-IDF**.  
 - Huấn luyện mô hình **Naive Bayes** để phân loại cảm xúc (`Positive`, `Negative`).  
-✅ Hiển thị **biểu đồ màu sắc sinh động** trực tiếp trên web.  
+- Hiển thị **biểu đồ màu sắc sinh động** trực tiếp trên web.  
 
 ---
 
