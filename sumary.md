@@ -1,3 +1,4 @@
+#### ->>>>>>>> Phase 1 <<<<<<<-####
 # IMDb Sentiment Analysis
 
 ## 1. Mục tiêu
@@ -26,6 +27,25 @@ Xây dựng mô hình phân loại cảm xúc (tích cực / tiêu cực) từ �
 - matplotlib
 - joblib
 
+
+#### ->>>>>>>> Phase 2 <<<<<<<<-####
+
+## 1. Mục tiêu
+Phân loại cảm xúc (tích cực / tiêu cực) của người dùng qua Ảnh và Video
+## 2. Quy trình xử lý
+-
+-
+-
+## 3. Kết quả
+-
+-
+-
+## 4. Thư viện sử dụng
+-matplotlib 
+-numpy
+-opencv
+
+
 ## 5.Kế hoạch   
  # Kế hoạch đầu tiên (Nhận diện cảm xúc qua Text do người dùng nhập (29/7 - 8/8 ))
  # Kế hoạch tiếp theo cho ngày (9/8/2025)
@@ -33,4 +53,14 @@ Xây dựng mô hình phân loại cảm xúc (tích cực / tiêu cực) từ �
 - Cho phép người dùng nhập câu và nhận kết quả cảm xúc    
 - Tích hợp thêm lịch sử nhập và biểu đồ tỉ lệ             
  # Kế hoạch tiếp theo cho ngày (10/8/2025)
+ -Tìm hiểu thêm về OpenCV 
+ # Kế hoạch tiếp theo cho ngày (14/8/2025)
+ -Dùng OpenCV đọc file ảnh và xử lí ảnh (mở,đọc,chỉnh kích thước ảnh ...)
+    + Học thêm về BGR và RGB (H,W,C)
+ -Dùng OpenCV mở video 
+    + Học cv.cvtColor() để chuyển ảnh sang grayscale.
+ # Kế hoạch tiếp theo cho ngày (15/8/2025)
+    + Tải file Haar Cascade và thử phát hiện khuôn mặt từ webcam
+
+
  
