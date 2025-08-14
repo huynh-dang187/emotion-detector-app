@@ -22,14 +22,14 @@
 ![Demo Phase 1] ![alt text](1-1.png)
 *Ví dụ nhập văn bản và xem kết quả nhận diện cảm xúc.*
 
-### Tích cực (Positive)
+# Tích cực (Positive)
 1.I absolutely loved this movie, it made me so happy.
 2.What a fantastic performance, I enjoyed every moment.
 3.The food was delicious and the service was excellent.
 4.This is the best day of my life!
 5.I’m so grateful for your help, it means a lot to me.
 
-### Tiêu cực (Negative)
+# Tiêu cực (Negative).
 6.I hated every minute of that boring lecture.
 7.The product is terrible and a complete waste of money.
 8.I’m extremely disappointed with the poor quality.
