@@ -1,24 +1,24 @@
-import cv2 as cv
-import sys
+from deepface import DeepFace
+import cv2
 
-img = cv.imread(cv.samples.findFile("many_people.jpg"))
-
+# Load ảnh
+img_path = "Image_to_test/img1.jpg"
+img = cv2.imread(img_path)
 if img is None:
-    sys.exit("Could not read the image.")
+    raise ValueError("Không tìm thấy ảnh hoặc đường dẫn sai!")
 
-# Đổi ảnh sang grayscale  -> Mục đích của việc đổi màu : giảm dung lượng , dễ xử lí hơn
-gray = cv.cvtColor(img , cv.COLOR_BGR2GRAY)
+# Resize chuẩn
+img = cv2.resize(img, (224, 224))
 
-# Đổi ảnh dạng RGB để matplotlib và deepface có thể xử lí 
-img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+# Dự đoán cảm xúc
+result_list = DeepFace.analyze(img, actions=['emotion',"age","gender"], enforce_detection=False, detector_backend='mtcnn')
 
+# Lấy phần tử đầu tiên của list
+result = result_list[0]
 
-cv.imshow("Display window", img)
-cv.imshow("gray",gray)
-cv.imshow("Non_color",img_rgb)
+# In ra dominant emotion
+print("Dominant emotion:", result['dominant_emotion'])
 
-k = cv.waitKey(0)
+print("Age:", result['age'])
 
-if k == ord("s"):
-    cv.imwrite("many_people.jpg", img)
-    
+print("Gender:", result['dominant_gender'])

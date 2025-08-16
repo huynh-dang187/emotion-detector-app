@@ -44,13 +44,8 @@
 git clone https://github.com/huynh-dang187/emotion-detector-app.git
 
 
-# 2. Tạo môi trường ảo (khuyến nghị)
-python -m venv venv
-venv\Scripts\activate   # Windows
-source venv/bin/activate  # Mac/Linux
-
-# 3. Cài đặt thư viện
+# 2. Cài đặt thư viện
 pip install -r requirements.txt
 
-# 4. Chạy ứng dụng
+# 3. Chạy ứng dụng
 streamlit run testStreamlit.py
