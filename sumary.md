@@ -75,5 +75,15 @@ Phân loại cảm xúc (tích cực / tiêu cực) của người dùng qua Ả
     + Lấy kết quả và in ra Terminal 
     + Tạo giao diện cho chương trình nhận diện cảm xúc qua ảnh 
     + Kết hợp cả 2 chương trình nhận diện qua văn bản và hình ảnh tạo mốc nối bằng sidebar 
+ # Dùng OpenCV và train với mô hình DeepFace nhận diện cảm xúc qua video ( 17/8/2025)
+    + Chưa nhận diện được cảm xúc lỗi ( có thể do ánh sáng và môi trường )
+ # Xây dựng lại chương trình với điều kiện môi trường tốt hơn (19/8/2025)
+   + Chương trình lỗi do chưa chuyển đổi về RGB để opencv có thể xử lí 
+   + Chưa đủ ánh sáng để chương trình thực hiện 
+   + Thành công nhận nhiện 4 cảm xúc qua video (happy , angry , fear , suprise)
+ # Kế hoạch ngày (20/8/2025)
+   + Tạo giao diện cho chương trình nhận diện cảm xúc qua video 
+   + Kết nối với 2 chương trình trước (Nhận diện qua văn bản và Hình ảnh tĩnh) tạo thành Page hoàn chỉnh 
+
 
  

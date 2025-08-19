@@ -9,7 +9,7 @@ from nltk.tokenize import word_tokenize
 with open("style.css", "r", encoding="utf-8") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.title("Ứng dụng Nhận diện Cảm xúc")
+st.title("Ứng dụng Nhận diện Cảm xúc qua văn bản ")
 # --------------------------------------------------------
 # |             ỨNG DỤNG PHÂN LOẠI CẢM XÚC                |
 # --------------------------------------------------------
