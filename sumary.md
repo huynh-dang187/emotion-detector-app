@@ -84,6 +84,18 @@ Phân loại cảm xúc (tích cực / tiêu cực) của người dùng qua Ả
  # Kế hoạch ngày (20/8/2025)
    + Tạo giao diện cho chương trình nhận diện cảm xúc qua video 
    + Kết nối với 2 chương trình trước (Nhận diện qua văn bản và Hình ảnh tĩnh) tạo thành Page hoàn chỉnh 
-
-
+   + Kết hợp vơi AI (chat gpt) thêm chức năng "Chụp ảnh thủ công" phân tích cảm xúc
+   + Hoàn thành 4 chức năng chính 
+      .💬 Văn bản
+      .🖼 Ảnh upload
+      .🎥 Webcam realtime (WebRTC)
+      .📸 Chụp ảnh thủ công
+  # Kế hoạch ngày (21/8/2025)
+   + Chỉnh sửa và xóa file không cần thiết trong dự án giúp tối ưu và đẹp mắt hơn dễ bảo trì hơn 
+   + Tạo lại CSS với markdown làm nổi bật web hơn
+  # Kế hoách ngày (22/8/2025)
+   + Thực hiện viết tài liệu bằng Word mô tả dự án 
+   + Thực hiện xây dựng trang trình bày bằng powerpoint để thuyết trình dự án
+  # Kế hoạch ngày (23/8/2025)
+   + Điều chỉnh Readme để người dùng có thể đọc dễ dàng hơn 
  
