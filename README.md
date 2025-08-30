@@ -28,7 +28,7 @@
 
 link demo phát hiện cảm xúc qua video : https://drive.google.com/file/d/1X8Uyh4wE-LfgdoXWIrAolHsjLTyb8tUr/view?usp=sharing
 
-link demo phát hiện cảm xúc qua văn bản và hình ảnh (upload) : 
+link demo phát hiện cảm xúc qua văn bản và hình ảnh (upload) : https://drive.google.com/file/d/1N-A5BEPDuWHLb9WagPrDKYfB0S67XXMy/view?usp=sharing
 
 
 ---
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 ## 🚀 Usage
 Run the Streamlit app:
 
-        streamlit run app_text.py
+        streamlit run final_app.py
 
 ---
 
