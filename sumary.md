@@ -86,10 +86,10 @@ Phân loại cảm xúc (tích cực / tiêu cực) của người dùng qua Ả
    + Kết nối với 2 chương trình trước (Nhận diện qua văn bản và Hình ảnh tĩnh) tạo thành Page hoàn chỉnh 
    + Kết hợp vơi AI (chat gpt) thêm chức năng "Chụp ảnh thủ công" phân tích cảm xúc
    + Hoàn thành 4 chức năng chính 
-      .💬 Văn bản
-      .🖼 Ảnh upload
-      .🎥 Webcam realtime (WebRTC)
-      .📸 Chụp ảnh thủ công
+      .Văn bản
+      .Ảnh upload
+      .Webcam realtime (WebRTC)
+      .Chụp ảnh thủ công
   # Kế hoạch ngày (21/8/2025)
    + Chỉnh sửa và xóa file không cần thiết trong dự án giúp tối ưu và đẹp mắt hơn dễ bảo trì hơn 
    + Tạo lại CSS với markdown làm nổi bật web hơn
@@ -98,4 +98,9 @@ Phân loại cảm xúc (tích cực / tiêu cực) của người dùng qua Ả
    + Thực hiện xây dựng trang trình bày bằng powerpoint để thuyết trình dự án
   # Kế hoạch ngày (23/8/2025)
    + Điều chỉnh Readme để người dùng có thể đọc dễ dàng hơn 
+  # Kế hoạch ngày (28/8/2025)
+   + Tài liệu Word (còn thiếu so sánh giữa các mô hình Naive Bayes vs LogisticRegression vs BERT )
+   + Điều chỉnh Readme chưa được thực hiện 
+  # Kế hoạch ngày (29/8/2025) 
+   + Bổ sung Literature Survey cho báo cáo (Word)
  
