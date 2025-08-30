@@ -9,31 +9,53 @@
 
 ---
 
-### Tính năng hiện tại (Phase 1) ###
+## Features
 
-- Giao diện trực quan với **Streamlit**.  
-- Làm sạch và tiền xử lý văn bản (NLTK, stopwords, tokenization).  
-- Vector hóa văn bản bằng **TF-IDF**.  
-- Huấn luyện mô hình **Naive Bayes** để phân loại cảm xúc (`Positive`, `Negative`).  
-- Hiển thị **biểu đồ màu sắc sinh động** trực tiếp trên web.  
+# 1. Nhận diện cảm xúc văn bản
+   **Dữ liệu:** IMDb (50k review).
+   **Xử lý:** làm sạch, tokenization, TF-IDF.
+   **Thuật toán:** Naive Bayes, Logistic Regression.
+   **Kết quả:** Accuracy >80%, phân loại tích cực / tiêu cực.
+   **Giao diện:** Nhập văn bản → dự đoán cảm xúc ngay trên Streamlit.
+# 2. Nhận diện cảm xúc khuôn mặt
+   **Dữ liệu:** Ảnh upload, webcam realtime, chụp camera.
+   **Phát hiện khuôn mặt:** OpenCV Haar Cascade.
+   **Nhận diện cảm xúc:** DeepFace (CNN pretrained).
+   **Hiển thị:** bounding box + label cảm xúc, tuổi, giới tính.
+   **Chế độ:** Upload ảnh, webcam realtime, hoặc chụp ảnh.
 
+# Demo
 
-## 🚀 Demo
+link demo phát hiện cảm xúc qua video : https://drive.google.com/file/d/1X8Uyh4wE-LfgdoXWIrAolHsjLTyb8tUr/view?usp=sharing
 
-![Demo Phase 1] ![alt text](1-1.png)
-*Ví dụ nhập văn bản và xem kết quả nhận diện cảm xúc.*
+link demo phát hiện cảm xúc qua văn bản và hình ảnh (upload) : 
+
 
 ---
 
-## 🛠️ Cài đặt và chạy
+## 🛠️ Installation
 
 
-# 1. Clone project
+# Clone project (kéo project về)
 git clone https://github.com/huynh-dang187/emotion-detector-app.git
 
+# Create virtual environment (tạo môi trường ảo ,không bắt buộc nhưng nên) (optional but recommended) 
+python -m venv venv
+source venv/bin/activate   # Linux / Mac
+venv\Scripts\activate      # Windows
 
-# 2. Cài đặt thư viện
+# Install dependencies (cài đặt các gói phụ thuộc)
 pip install -r requirements.txt
 
-# 3. Chạy ứng dụng
-streamlit run testStreamlit.py
+---
+
+
+## 🚀 Usage
+Run the Streamlit app:
+
+        streamlit run app_text.py
+
+---
+
+## 📄 License
+Distributed under the MIT License. See LICENSE for details.
